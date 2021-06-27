@@ -1,0 +1,113 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: antiquewhite;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  margin: 45px;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+p {
+  width: 90%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  color: darkblue;
+  position: relative;
+  margin-top: 70px;
+  font-weight: bolder;
+  font-size: 1.1rem;
+
+}
+
+.item1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  font-weight: bold;
+  background-color: darkred;
+  color: antiquewhite;
+  border: 1px black solid;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+
+.item2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  font-weight: bold;
+  background-color: darkblue;
+  color: antiquewhite;
+  border: 1px black solid;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.item3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 30px;
+  font-weight: bold;
+  background-color: darkgreen;
+  color: antiquewhite;
+  border: 1px black solid;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.row {
+  width: 100%;
+  align-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    border: 1px black solid;
+    position: relative;
+    width: 96%;
+    margin: 2px;
+    background-color: lightgray;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+    border: 1px black solid;
+    position: relative;
+    margin:  2px;
+    background-color: lightgray;
+  }
+  .col-md-6 {
+    width: 48%;
+  }
+  .col-md-12 {
+    width: 96.5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    border: 1px black solid;
+    width: 32.75%;
+    position: relative;
+    margin: 2px;
+    background-color: lightgray;
+  }
+}
